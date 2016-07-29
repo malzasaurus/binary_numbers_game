@@ -1,24 +1,16 @@
-'use strict';
+/*
 
-// Create a node server instance!
-var server = require('http').createServer();
+ ES6 by default! Using http://babeljs.io
 
-var createApplication = function () {
-    var app = require('./app')();
-    server.on('request', app); // Attach the Express application.
-};
+ Our actual application code begins inside of
+ server/main.js, but the process should be started
+ from this file in order to enable ES6 translation.
 
-var startServer = function () {
+ There is no boilerplate ES6 code in our application
+ so if you choose not to use any ES6 features, you can
+ start your application from main.js.
 
-    var PORT = process.env.PORT || 1337;
+*/
 
-    server.listen(PORT, function () {
-        console.log('Server started on port' + PORT);
-    });
-
-};
-
-createApplication().then(startServer).catch(function (err) {
-    console.error(err.stack);
-    process.kill(1);
-});
+require('babel-register');
+require('./main');

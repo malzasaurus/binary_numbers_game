@@ -1,0 +1,65 @@
+#board {
+  text-align: center;
+      
+      .background {
+      	background-color: #ECF8F7; //light aqua
+      	opacity: .75;
+      	border-radius: .25em;
+      	padding: 15px;
+      	border: 2px solid rgba(0,0,0,.5);
+      }
+      .directions li {
+        list-style-type: none;
+        text-align: left;
+        display: inline-block;
+      }
+      #allboards {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+      }
+      .indBoard {
+        margin: 15px;
+      }
+      .boardRow {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+      }
+      .tiles {
+      	height: 100px;
+        width: 75px;
+        background-color: #051A32; //navy
+        border: white solid 2px;
+        border-radius: .15em;
+      	margin: 3px;
+      	font-size: 30px;
+      	color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      //transition items
+      .on {
+        background-color: #fee176;
+        color: black;
+      }
+      .active {
+        border: 3px #C32244 solid;
+      }
+      .winner {
+        background-color: #C0BAEA;
+      }
+  }
+        // background-color: #FFE745; //bright yellow
+        // background-color: #FFC8D7;  //pink
+        // background-color: #52A5E3; //bright blue
+        // background-color: #59BADA; //purple
+        // background-color: #FCCF00; //orange yellow
+        // background-color: #BFB9E9; //purple
+        // background-color: #EC408A;
+        // background-color: #FE6029; //bright orange
+        // background-color: #FCCF00; //yellow
+        // background-color: #9696a5; //grey
