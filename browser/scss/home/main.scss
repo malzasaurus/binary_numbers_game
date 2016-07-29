@@ -1,0 +1,38 @@
+#home {
+  h2 {
+    margin-top: 40px;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+
+  .play-button {
+  	padding: 2px;
+  	border-radius: .25em;
+  	background-color: #FE6029; //bright orange
+  	width: 200px;
+  	border: 2px solid black;
+    font-size: 24px;
+    color: white;
+  }
+  .form-control {
+    width: 100px;
+    margin: auto;
+  }
+  #startBackground {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    background-color: #ECF8F7;
+    opacity: .75;
+    border-radius: .25em;
+    border: 2px solid rgba(0,0,0,.5)
+  }
+  div {
+  	padding: 10px;
+  }
+
+}
+
